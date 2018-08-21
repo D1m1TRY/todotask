@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDoTask</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\rarik\Desktop\к\styles\main.css">
+	<script src="C:\Users\rarik\Desktop\к\4d.js"></script>
+</head>
+<body>
+<div class="page">
+	<div class="pageHeader">
+		<div class="rightH">Завдання</div><img class="photo" src="https://pp.userapi.com/c636724/v636724553/4ccd1/vo5OvYJlP0g.jpg"><span class="leftH">Дмитро</span>
+	</div>
+<nav class="main">
+	<div class="nav">
+		<div class="menu">
+        <div class="title">Навігація</div>
+        <ul>
+          <li onclick="viewDiv()"><i class="fa fa-home" ></i>Домашні справи</li>
+          <li onclick="viewDiv1()"><i class="fa fa-signal" ></i>Графік роботи</li>
+          <li onclick="viewDiv2()"><i class="fa fa-tasks"></i>Власний проект</li>
+        </ul>
+      </div>
+	</div>
+	<div class="view">
+		<div class="taskHeader">
+			<div class="tasklist">Список справ
+			<span class="doit">
+				<a href="">Додати </a>
+			</span>	
+		</div>
+		</div>
+<div id="cd">
+	<div class="content">
+		<div class="list">
+			<div class="title">Сьогодні</div>
+			<ul>
+				<hr>
+					<input type="checkbox" id="cbx" style="display: none;">
+<label for="cbx" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Поприбирати</span>
+</label>
+				<hr>
+					<input type="checkbox" id="cbz" style="display: none;">
+<label for="cbz" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Постірати речі</span>
+</label>
+				
+				<hr>
+					<input type="checkbox" id="cbc" style="display: none;">
+<label for="cbc" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Приготувати щось на вечерю</span>
+</label>
+			<hr>	
+			</ul>
+				<div class="list">
+				<div class="title">Завтра</div>
+			<ul>
+				<hr>
+					<input type="checkbox" id="cbv" style="display: none;">
+<label for="cbv" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Скласти чисті речі</span>
+</label>
+				<hr>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Графік роботи -->
+
+
+<div class="view">
+
+<div id="cd1">
+	<div class="content">
+		<div class="list">
+			<div class="title">Сьогодні</div>
+			<ul>
+				<hr>
+					<input type="checkbox" id="cbb" style="display: none;">
+<label for="cbb" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Зробити макет сайту</span>
+</label>
+				<hr>
+
+<input type="checkbox" id="cbn" style="display: none;">
+<label for="cbn" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Зверстати сторінку згідно с макетом</span>
+</label>
+			<hr>	
+					<input type="checkbox" id="cbm" style="display: none;">
+<label for="cbm" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Зареєструвати домен</span>
+</label>
+			<hr>	
+			</ul>
+				<div class="list">
+				<div class="title">Завтра</div>
+			<ul>
+				<hr>
+					<input type="checkbox" id="cbq" style="display: none;">
+<label for="cbq" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Заплатити за домен</span>
+</label>
+				<hr>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Проект -->
+
+
+<div class="view">
+<div id="cd2">
+	<div class="content">
+		<div class="list">
+			<div class="title">Сьогодні</div>
+			<ul>
+				<hr>
+					<input type="checkbox" id="cb1" style="display: none;">
+<label for="cb1" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Зробити макет мобільного додатка для покупок</span>
+</label>
+				<hr>
+
+<input type="checkbox" id="cb2" style="display: none;">
+<label for="cb2" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Відтворити інтерфейс</span>
+</label>
+			<hr>	
+					<input type="checkbox" id="cb3" style="display: none;">
+<label for="cb3" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Зробити дійсними всі функції кнопок</span>
+</label>
+			<hr>	
+			</ul>
+				<div class="list">
+				<div class="title">Завтра</div>
+			<ul>
+				<hr>
+					<input type="checkbox" id="cb4" style="display: none;">
+<label for="cb4" class="check">
+  <svg width="18px" height="18px" viewBox="0 0 18 18">
+    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+    <polyline points="1 9 7 14 15 4"></polyline>
+  </svg>
+<span>Протестувати на практиці</span>
+</label>
+				<hr>
+			</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</nav>
+</div>
+</body>
+</html> 
